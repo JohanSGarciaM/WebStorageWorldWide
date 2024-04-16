@@ -1,0 +1,171 @@
+/*Colores
+    Rojo = #ea1e26
+    Azul = #043498
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/**-------------------
+-----HEADER----------
+--------------------**/
+header{
+    height: 50px;
+    width: 100%;
+    background: #043498;
+    color:#fff;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+}
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#btn-menu{
+    display: none;
+}
+.menu ul{
+    background: #043498;
+    display: flex;
+    list-style: none;
+}
+.menu ul ul{
+    display:none;
+}
+.menu a{
+    display:block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background:rgba(0,0,0,0.3);
+}
+.menu a span{
+    margin-left: 10px;
+
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+
+}
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top:50px;
+        left: 0;
+        width: 70%;
+        transform:translateX(-100%);
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+        background: rgba(138, 99, 27, 0.534);
+    }
+    .menu ul li:hover ul{
+        display: none;
+        position: relative;
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translate(0%);
+    }
+}
+/**----------------
+-------CATALOGO----
+-----------------**/
+
+
+.catalogo{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+section .slide{
+    margin-top: 50px;
+    position: relative;
+    background: #0f0;
+    height: 100%;
+    flex: 1;
+    border-right: 2px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+section .slide:last-child{
+    border-right: none;
+}
+section .slide:hover{
+    flex-grow: 5;
+    cursor: pointer;
+}
+section .slide:nth-child(1){
+    background: url(../Images/IMG-20240412-WA0003.jpg);
+    background-position: center center;
+}
+section .slide:nth-child(2){
+    background: url(../Images/IMG-20240411-WA0023.jpg);
+    background-position: center center;
+}
+section .slide:nth-child(3){
+    background: url(../Images/IMG-20240412-WA0038.jpg);
+    background-position: center center;
+}
+section .slide:nth-child(4){
+    background: url(../Images/IMG-20240411-WA0028.jpg);
+    background-position: center center;
+}
+section .slide:nth-child(5){
+    background: url(../Images/LOGO\ SIN\ FONDO.png);
+    background-position     : center center;
+}
+section .slide .content{
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color:#fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+section .slide:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+
+/** ------------------
+------NAVEGACION POR EL CATALOGO---
+--------------------------**/
+#cambio{
+    position: absolute;
+    margin-top: 600px;
+    width: 100%;
+    height: 30px;
+}
+#cambio1{
+    position: absolute;
+    margin-top: 630px;
+    width: 100%;
+    height: 30px;
+}
