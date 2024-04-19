@@ -100,52 +100,33 @@ header label{
 ---------CONTENIDO--------
 -----------------------**/
 
-
-#portadaizquierda{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-}
-#address{
-    font-size: 20px;
-    padding: 40px;
-}
 .portada{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    align-items: center;
+    background-color: aqua;
+    max-width: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
+
 #imagenPortada{
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-
+    height: 100px;
+    width: 100px;
 }
 
-.portadaderecha{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    
+#grid1{
+    background-color: orange;
+    height: 100px;
 }
-#video{
-    width: 60%;
-    height: auto;
+
+#grid2{
+    height: 100px;
+    background-color: green;
 }
-#aboutUs{
-    width: 70%;
-    margin-top: 20px;
-    background-color: #043498;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contenedorvideo{
-    width: 50%;
-    padding: 10px;
+
+#gridprueba{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -153,10 +134,6 @@ header label{
 
 
 
-.imagen{
-    width: 55%;
-    margin: 50px 100px;
-}
 
 
 .creacion{
@@ -179,7 +156,7 @@ header label{
 -----------------------**/
 
 .contenedor{
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 
 }
