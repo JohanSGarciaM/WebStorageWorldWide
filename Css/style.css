@@ -102,55 +102,24 @@ header label{
 -----------------------**/
 
 .portada{
-    background-color: aqua;
-    max-width: 1fr;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+}
+
+#portadaizquierda{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
 }
 
 #imagenPortada{
-    height: 100px;
-    width: 100px;
-}
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    grid-column: 2 / 3;
 
-#grid1{
-    background-color: orange;
-    height: 50px;
-    margin-top: 50px;
-}
-
-#grid2{
-    height: 100px;
-    background-color: green;
-}
-
-#gridprueba{
-    height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-
-
-
-
-
-
-.creacion{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
- 
-    text-align: center;
-    align-content: space-between;
-    
-    
-}
-#demo{
-    color : #043498;
 }
 
 
