@@ -116,7 +116,8 @@ header label{
 
 #grid1{
     background-color: orange;
-    height: 100px;
+    height: 50px;
+    margin-top: 50px;
 }
 
 #grid2{
