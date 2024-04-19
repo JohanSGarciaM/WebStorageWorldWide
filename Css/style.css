@@ -30,7 +30,8 @@ header{
 
 #isotipo {
     background-color: white;
-    max-height: 50px;
+    max-height: 45px;
+    margin: 5px;
 }
 header label{
     font-size: 30px;
