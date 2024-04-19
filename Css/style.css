@@ -17,15 +17,20 @@
 header{
     height: 50px;
     width: 100%;
-    background: #ea1e26;
+    background: #043498;
     color:#fff;
     display: flex;
-    justify-content:flex-end;
+    place-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 1;
     margin-top: s0px;
 
+}
+
+#isotipo {
+    background-color: white;
+    max-height: 50px;
 }
 header label{
     font-size: 30px;
@@ -36,7 +41,7 @@ header label{
     display: none;
 }
 .menu ul{
-    background: #ea1e26;
+    background: #043498;
     display: flex;
     list-style: none;
 }
@@ -75,7 +80,7 @@ header label{
     }
     .menu ul{
         flex-direction: column;
-        background: rgba(138, 99, 27, 0.534);
+        background: #043498;
     }
     .menu ul li:hover ul{
         display: none;
@@ -109,6 +114,7 @@ header label{
 }
 .portada{
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     align-items: center;
 }
