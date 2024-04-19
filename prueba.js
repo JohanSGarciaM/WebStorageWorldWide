@@ -17,7 +17,3 @@ slide1.addEventListener('click',function(){
     cambio1.style.transform = "translateY("+(200)+"px)";
     
 });
-
-prueba.addEventListener('click',function(){
-    prueba.style.opacity = 0.3;
-});
