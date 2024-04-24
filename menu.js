@@ -10,12 +10,12 @@ let intervalo = 3000;
 
 
 /**difuminacion del video */
-window.addEventListener('scroll',function(){
+/**window.addEventListener('scroll',function(){
     
     let value = 2 + window.scrollY/-150;
     video.style.opacity = value;
 });
-
+**/
 
 /** slider  */
 window.addEventListener("resize",function(){
