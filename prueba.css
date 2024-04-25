@@ -5,3 +5,19 @@
     align-content: center;
     text-align: center;
 }
+
+@media (max-width:412px){
+    #textportada{   
+        font-size:100px !important;
+        background-color: orange;
+    }
+}
+
+#textportada{
+    position: absolute;
+    font-size: 10vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top:1%;
+    left: 5%;
+}
+
