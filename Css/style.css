@@ -119,11 +119,6 @@ header label{
 
 }
 
-@media (max-width:450px){
-    #textportada{
-        font-size:50vw;
-    }
-}
 
 /**-----------------------
 ---------Logo Portada-----
@@ -160,6 +155,7 @@ header label{
     max-height: 100%;
 }
 #textportada{
+    color:white;
     position: absolute;
     font-size: 10vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -170,15 +166,15 @@ header label{
     position: absolute;
     font-size: 7vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #043498;
-    color: white;
+    color: orange;
     top:18%;
     left: 5%;
+    font-weight: bold;
 }
 
 #boton{
     position: absolute;
-    background-color: orange;
+    background-color: yellow;
     align-content: center;
     text-align: center;
     bottom: 5%;
@@ -187,10 +183,11 @@ header label{
     height: 40px;
     border-radius: 7%;
     border-style:solid;
-    border-color: black;
+    border-color: white    ;
     font-size: 18px;
     font-style: italic;
     text-decoration: underline;
+    font-weight: bold;
 }
 #boton a{
     color:black;
