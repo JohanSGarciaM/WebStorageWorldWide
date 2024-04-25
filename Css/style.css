@@ -30,7 +30,7 @@ header{
 }
 
 .iconNav {
-    background-image: url('/Images/Logo_Isotipo.png');
+    background-image: url('../Images/Logo_Isotipo.png');
     background-color: white;
     background-size:cover;
     height: 45px;
@@ -136,6 +136,10 @@ header label{
     position: relative;
 }
 
+#imagenPortada{
+    max-width: 100%;
+    max-height: 100%;
+}
 #textportada{
     position: absolute;
     font-size: 80px;
@@ -179,11 +183,14 @@ header label{
     margin-right: 10%;
 }
 
+
+
 #aboutUs{
     color: #043498;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
 }
+
 
 /**-------SLIDER-----------
 -----------------------**/
