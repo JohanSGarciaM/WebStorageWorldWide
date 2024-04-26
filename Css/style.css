@@ -18,7 +18,7 @@
 header{
     height: 50px;
     width: 100%;
-    background: #043498;
+    background: orange;
     color:#fff;
     display: flex;
     place-content: space-between;
@@ -46,7 +46,7 @@ header label{
     display: none;
 }
 .menu ul{
-    background: #043498;
+    background: orange;
     display: flex;
     list-style: none;
 }
@@ -85,7 +85,7 @@ header label{
     }
     .menu ul{
         flex-direction: column;
-        background: #043498;
+        background: orange;
     }
     .menu ul li:hover ul{
         display: none;
@@ -153,28 +153,34 @@ header label{
 #imagenPortada{
     max-width: 100%;
     max-height: 100%;
+    opacity: 80%;
 }
 #textportada{
     color:white;
     position: absolute;
     font-size: 10vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top:1%;
+    top:-2%;
     left: 5%;
 }
 #textportada2{
     position: absolute;
     font-size: 7vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: orange;
-    top:18%;
+    color: white;
+    top:15%;
     left: 5%;
     font-weight: bold;
+    text-decoration: solid;
+    text-shadow: #043498;
+    background-color: orange;
+    margin-top: 2px;
+    
 }
 
 #boton{
     position: absolute;
-    background-color: yellow;
+    background-color:#cc6600;
     align-content: center;
     text-align: center;
     bottom: 5%;
@@ -183,28 +189,31 @@ header label{
     height: 40px;
     border-radius: 7%;
     border-style:solid;
-    border-color: white    ;
+    border-color: black    ;
     font-size: 18px;
     font-style: italic;
     text-decoration: underline;
     font-weight: bold;
 }
 #boton a{
-    color:black;
+    color:white;
 }
 
 .textoportada{
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
+    border:2px solid orange;
+    padding: 15px;
+
 }
 
 
 
 #aboutUs{
-    color: #043498;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: oblique;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /**---------------------
