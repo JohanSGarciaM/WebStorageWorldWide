@@ -106,17 +106,26 @@ header label{
 
     #imagenPortada{
         max-width: 100%;
-        height: 57vh;
+        height: 65vh !important; 
     }
 
     #textportada{   
         font-size:18vw !important;
+        left: 5%;
     }
 
     #textportada2{
         font-size:12vw !important;
+        top:18% !important;
+        right:5%;
+        color:white !important;
+        background-color: orange;
     }
-
+    #portada label{
+        bottom:8%  !important;
+        left:15% !important;
+        font-size:30px !important;
+    }
 }
 
 
@@ -150,31 +159,57 @@ header label{
     position: relative;
 }
 
+.titulo{
+    animation: aparecer 2s ease-out forwards;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+#portada label{
+    position:absolute;
+    bottom:8%;
+    left: 46%;
+    font-size: 50px;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: saltar 0.5s ease-in-out infinite;
+}
 #imagenPortada{
-    max-width: 100%;
-    max-height: 100%;
-    opacity: 80%;
+    width: 100%;
+    height: 90vh;
+    opacity: 75%;
 }
 #textportada{
     color:white;
     position: absolute;
     font-size: 10vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top:-2%;
-    left: 5%;
+    top:1%;
+    right: 55%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 #textportada2{
     position: absolute;
-    font-size: 7vw;
+    font-size: 10vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    top:15%;
-    left: 5%;
+    color: orange;
+    top:1%;
+    left: 50%;
     font-weight: bold;
     text-decoration: solid;
-    text-shadow: #043498;
-    background-color: orange;
-    margin-top: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+#textportada3{
+    position: absolute;
+    font-size: 20px;
+    top: 70%;
+    left:5%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width:200px;
     
 }
 
@@ -184,7 +219,7 @@ header label{
     align-content: center;
     text-align: center;
     bottom: 5%;
-    left: 5%;
+    right: 5%;
     width: 130px;
     height: 40px;
     border-radius: 7%;
@@ -291,4 +326,27 @@ footer{
     align-content: center;
     width:100%;
     font-family: monospace;
+}
+
+/** Animaciones **/
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes saltar {
+
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    
 }
