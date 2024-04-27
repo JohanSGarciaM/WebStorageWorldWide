@@ -172,7 +172,7 @@ header label{
     font-size: 50px;
     color:white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: saltar 0.5s ease-in-out infinite;
+    animation: saltar 1.5s ease-in-out infinite;
 }
 #imagenPortada{
     width: 100%;
@@ -218,13 +218,11 @@ header label{
     background-color:#cc6600;
     align-content: center;
     text-align: center;
-    bottom: 5%;
-    right: 5%;
+    bottom: 10%;
+    right: 10%;
     width: 130px;
     height: 40px;
     border-radius: 7%;
-    border-style:solid;
-    border-color: black    ;
     font-size: 18px;
     font-style: italic;
     text-decoration: underline;

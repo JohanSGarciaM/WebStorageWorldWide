@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function() {
 setInterval(function() {
     const label = document.getElementsByClassName('icon-down-open');
     label.classList.toggle('label-animado'); // Alternar la clase para iniciar la animación
-}, 3000);
+}, 5000);
 
